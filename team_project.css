@@ -6,12 +6,14 @@ div{display: inline-block; text-align: center;}
     background-color:#696969;
     width: 50%;
     height: 100px;
+    text-align: left;
 }
 #div1_1{
     background-color: #696969;
     width: 50%;
     height: 100px;
     float:right;
+    text-align: center;
 }
 #div2{
     background-color: gray;
@@ -20,17 +22,317 @@ div{display: inline-block; text-align: center;}
 }
 #div3{
     background-color: darkgray;
-    width: 15%;
-    height: 700px;
+    width: 200px;
+    height: calc(100vh - 100px);
 }
 #div4{
     background-color: #F5F5F5;
-    width: 85%;
-    height: 700px;
-    float: right
+    width: calc(100% - 200px);
+    height: auto;
+    float: right;
+    display: inline-block;
 }
 #div5{
     background-color: #696969;
     width: 100%;
     height: 100px;
+    text-align: center;
+}
+.menu_button {
+    width: 200px;
+    height: calc(46px - 5px);
+    background-color: gainsboro;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-top: calc((46px - 1.5em) / 2);
+    margin: 10px 30px;
+}
+.menu_button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.input_type {
+    width: 140px;
+}
+#submit_type {
+    border-style: none;
+    background-color: gainsboro;
+    width: 70px;
+    height: 28px;
+   
+
+    
+}
+#div3 p {
+    text-align: left;
+}
+#submit_type:hover {
+    cursor: pointer;
+    background-color: dimgray;
+}
+
+#div4 ul {
+    list-style: none;
+    padding-left: 0;
+}
+#div4 ul li {
+    display: inline-block;
+    float: left;
+    width: calc((100% / 3) - 25px);
+    padding: 10px 10px;
+}
+#div4 ul li img{
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    
+}
+.atag {
+    display: none;
+}
+#atag2 {
+    display: none;
+}
+
+
+#navigation-menu {
+    display: none;   
+    position: fixed;
+    height: 150px;
+}
+#navigation-menu ul { 
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+#navigation-menu ul li{
+    padding: 5px;
+}
+#navigation-menu ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navigation-menu ul li a:hover{
+    color: white;
+}
+
+#navigation-login {
+    display: none;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 5%;
+}
+
+
+#board {
+    margin-top:30px;
+    background-color: black;
+    color:white;
+    width: 90%;
+    height: 30px;
+}
+#board div {
+    margin: 0px 70px;
+}
+
+table.type07 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    margin: 10px 80px;
+}
+table.type07 thead {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #A99595;
+    
+}
+table.type07 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+}
+table.type07 tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #C7B3B3;
+}
+table.type07 .td {
+    width: 1000px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type07 .Lookup {
+    width: 40px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type07 .Date {
+    width: 100px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.type07 .name {
+    width: 100px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+.titlec {
+    
+}
+.titlec:hover {
+     background-color: gray;
+     text-decoration: underline;
+     cursor:pointer;
+}
+#btn_1 {
+    background-color: gainsboro;
+    display: inline-block;
+    float: right;
+    margin-right: 80px;
+}
+#view {
+    height: 400px;
+    border: 1px solid gainsboro;
+}
+#btn_2 {
+    margin-right: 80px;
+    float: right;
+}
+#btn_3 {
+    float: left;
+    margin-left: 80px;
+}
+#btn_4 {
+    float:right;
+    
+}
+#content_w{
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+
+#form {
+    background: silver;
+	border-radius: 5px;
+	counter-reset: fieldsets;
+	width: 100%;
+    height: calc(100vh - 210px);
+}
+
+		
+#form fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+		
+#form fieldset:last-of-type {
+	margin-bottom: 0;
+}
+			
+#form legend {
+	color: #384313;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;
+}
+				
+#form > fieldset > legend:before {
+	content: "Step " counter(fieldsets) ": ";
+	counter-increment: fieldsets;
+}
+				
+#form fieldset fieldset legend {
+	color: #111111;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+			
+#form ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+							
+#form ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+			
+#form label {
+	float: left;
+	font-size: 13px;
+	width: 300px;
+}
+				
+#form fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+					
+					
+#form fieldset fieldset label:hover {
+	cursor: pointer;
+}
+				
+#form input:not([type=radio]) {
+	background: #ffffff;
+	border: none;
+	border-radius: 3px;
+	font: italic 13px 맑은고딕,굴림,돋움;
+	outline: none;
+	padding: 5px;
+	width: 150px;
+}
+					
+					
+				
+#form button {
+	background: #384313;
+	border: none;
+	border-radius: 20px;
+	color: #ffffff;
+	display: block;
+	font: 16px 맑은고딕,굴림,돋움;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+}
+					
+#form button:hover {
+	background: #1e2506;
+	cursor: pointer;
 }
